@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hey</title>
+</head>
+<body>
+<h1>MTV</h1>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Causes</th>
+    <th>Symptoms</th>
+    <th>Diagnosis</th>
+    <th>Treatment</th>
+  </tr>
+  <tr>
+  {% for key in object_list %}
+    <td>{{ key.name }}</td>
+    <td>{{ key.causes }}</td>
+    <td>{{ key.symptoms }}</td>
+    <td>{{ key.diagnosis }}</td>
+    <td>{{ key.treatment }}</td>
+{% endfor %}
+  </tr>
+</table>
+</body>
+</html>
